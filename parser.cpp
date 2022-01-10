@@ -186,10 +186,10 @@ std::shared_ptr<Expr> Parser::ParseAddSubExpr()
     lexer_.Next();
     auto rhs = ParseCallExpr();
     if(Current().Is(Token::Kind::PLUS) {
-		term = std::make_shared<BinaryExpr>(BinaryExpr::Kind::ADD, term, rhs);
-	} else {
-		term = std::make_shared<BinaryExpr>(BinaryExpr::Kind::SUB, term, rhs);
-	}
+        term = std::make_shared<BinaryExpr>(BinaryExpr::Kind::ADD, term, rhs);
+    } else {
+        term = std::make_shared<BinaryExpr>(BinaryExpr::Kind::SUB, term, rhs);
+    }
   }
   return term;
 }

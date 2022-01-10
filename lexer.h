@@ -47,7 +47,7 @@ public:
     EQUAL,
     COMMA,
     PLUS,
-	MINUS,
+    MINUS,
     // Complex tokens.
     INT,
     STRING,

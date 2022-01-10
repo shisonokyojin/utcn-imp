@@ -177,9 +177,9 @@ void Codegen::LowerExpr(const Scope &scope, const Expr &expr)
     case Expr::Kind::CALL: {
       return LowerCallExpr(scope, static_cast<const CallExpr &>(expr));
     }
-	case Expr::Kind::INT: {
+    case Expr::Kind::INT: {
       return LowerIntExpr(scope, static_cast<const IntExpr &>(expr));
-	}
+    }
   }
 }
 
@@ -212,7 +212,7 @@ void Codegen::LowerBinaryExpr(const Scope &scope, const BinaryExpr &binary)
     case BinaryExpr::Kind::ADD: {
       return EmitAdd();
     }
-	case BinaryExpr::Kind::SUB: {
+    case BinaryExpr::Kind::SUB: {
       return EmitSub();
     }
   }

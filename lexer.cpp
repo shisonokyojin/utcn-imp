@@ -17,7 +17,7 @@ Token::Token(const Token &that)
       value_.StringValue = new std::string(*that.value_.StringValue);
       break;
     }
-	case Kind::INT: {
+    case Kind::INT: {
       value_.IntValue = that.value_.IntValue;
       break;
     }
@@ -48,7 +48,7 @@ Token &Token::operator=(const Token &that)
       value_.StringValue = new std::string(*that.value_.StringValue);
       break;
     }
-	case Kind::INT: {
+    case Kind::INT: {
       value_.IntValue = that.value_.IntValue;
       break;
     }
